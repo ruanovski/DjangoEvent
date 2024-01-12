@@ -37,6 +37,33 @@ Este projeto é uma aplicação web construída em Django com Bootstrap para cri
      git clone  https://github.com/ruanovski/DjangoEvent.git
      ```
 
+  2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd AgendaEvent
+   ```
+
+   3. Instale as dependências
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   4. Aplique as migraçoes
+   ```bash
+   python manage.py migrate
+   ```
+
+   5. Execute o servidor django
+   ```bash
+   python manage.py runserver
+   ```
+
+## Login para teste
+usuario: Leoteste
+senha: zeroumdois
+
+
+
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias ou correções.
 
