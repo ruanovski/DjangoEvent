@@ -31,11 +31,11 @@ Este projeto é uma aplicação web construída em Django com Bootstrap para cri
 
 ## Como Usar
 
-1. Clone o repositório para o seu ambiente local:
+   1. Clone o repositório para o seu ambiente local:
 
    ```bash
-     git clone  https://github.com/ruanovski/DjangoEvent.git
-     ```
+   git clone  https://github.com/ruanovski/DjangoEvent.git
+   ```
 
   2. Navegue até o diretório do projeto:
 
@@ -59,8 +59,8 @@ Este projeto é uma aplicação web construída em Django com Bootstrap para cri
    ```
 
 ## Login para teste
-usuario: Leoteste
-senha: zeroumdois
+- usuario: Leoteste
+- senha: zeroumdois
 
 
 
