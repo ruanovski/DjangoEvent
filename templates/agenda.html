@@ -1,0 +1,34 @@
+{% extends 'model-page.html' %}
+
+{% block content  %}
+    <h2 class="text-light text-center fw-semibold">Agendamentos</h2>
+    <div class="d-flex justify-content-end">
+    <a href="evento/">
+            <button type="button" class="btn btn-primary m-5 btn-lg">Novo evento</button>
+        </a>
+    </div>        
+        <div class="d-flex flex-wrap justify-content-center flex-row">
+            {% for evento in eventos %}
+                    <div class="card p-2 text-center" style="width: 18rem;">
+                        <div class="card-body">
+                            <div {% if evento.get_evento_atrasado %}class="text-danger"{% endif %}>
+                                <h5 class="card-title">{{evento.titulo}}</h5>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">{{evento.get_data_evento}}</h6>
+                            <p class="card-text">
+                                <h6>Descrição</h6>
+                                {{evento.descricao}}
+                            </p>
+                             {% if evento.get_evento_atrasado %}<div>
+                                <p class="text-danger">Evento Atrasado</p>
+                            {% endif %}
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                <a href="evento/?id={{ evento.id }}"><button  class="btn btn-primary">Editar</button></a>
+                                <a href="evento/delete/{{ evento.id }}/"><button class="btn btn-danger">Excluir</button></a>
+                            </div>
+                        </div>
+                    </div>
+            {% endfor %}      
+        </div>
+    </div>
+{% endblock  %}
