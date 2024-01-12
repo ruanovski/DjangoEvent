@@ -1,5 +1,7 @@
 # Agenda de Eventos em Django 📅
 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/ruanovski/DjangoEvent/blob/main/LICENSE)
+
 
 ## Descrição do Projeto
 
